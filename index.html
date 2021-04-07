@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Hola, soy Vladimir</h1>
+
+    <script>
+      let a = 23;
+      let b = new Number(2);
+      let c = 7.19;
+      let d = "5.6";
+      let res;
+
+      console.log(a, b, c);
+      console.log(c.toFixed(1)); //redondea decimales
+      console.log(c.toFixed(5)); //agrega decimales
+      console.log(parseInt(c)); //deveuelve solo la parte entera
+      console.log(parseFloat(c));
+      console.log(typeof c, typeof d); //typef expresa de que tipo es
+      console.log(a + b);
+      console.log(c + d); // concatena el number con string
+      console.log(c + parseInt(d));
+      console.log(c + parseFloat(d));
+      console.log((res = c + parseInt(d))); //convierto el String en entero
+
+      console.log(res.toFixed(1));
+      //console.log(parseInt(res));
+
+      const jon = {
+          nombre: "Jon",
+          apellido: "MirCha",
+          edad: 35,
+          pasaTiempos: ["correr", "hacer ejercicios", "Dar clases"],
+          soltero: false,
+          contacto: {
+            email: "jonmircha@gmail.com",
+            twitter: "@jonmircha",
+            movil: "1231231231"
+          },
+          saludar: function () {
+            console.log("Hola :)")
+          },
+
+          decirMiNombre: function () {
+            console.log("Hola me llamo", $(this.nombre), $(this.apellido), "y tengo", $(this.edad), "años")
+          }
+        }
+
+        console.log(jon);
+        console.log(jon["nombre"]);
+        console.log(jon.pasaTiempos);
+        console.log(jon.soltero);
+        console.log(jon.contacto.twitter);
+        console.log(`Hola `,$(this.nombre));
+        jon.saludar();
+        //jon.decirMiNombre();
+      
+
+    </script>
+  </body>
+</html>
