@@ -5,9 +5,19 @@ function estoEsUnaFuncion() {
   console.log("Dos");
   console.log("Tres");
 }
-
 //invocacion de funcion
-estoEsUnaFuncion();
+//estoEsUnaFuncion();
+
+function DevuelveValor(){
+  console.log("Uno")
+  console.log("Dos")
+  console.log("Tres")
+  return("Devolviendo Valor")
+}
+//DevuelveValor();
+
+let GuardoValor = DevuelveValor();
+console.log(GuardoValor); //imprimo el log. y los return
 
 function validar() {
   if (a > b) {
@@ -25,3 +35,12 @@ let a = 13;
 let b = 9;
 let c = 7;
 validar(a, b, c);
+
+let nombre = "Vladimir"
+let edad = 23
+
+function saludo(nombre, edad){
+  console.log("Hola, como estas ${nombre}, tienes ${edad}")
+}
+
+saludo(nombre,edad);
