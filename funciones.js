@@ -17,6 +17,7 @@ function DevuelveValor(){
 //DevuelveValor();
 
 let GuardoValor = DevuelveValor();
+console.log("Soy el valor")
 console.log(GuardoValor); //imprimo el log. y los return
 
 function validar() {
