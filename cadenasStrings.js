@@ -19,7 +19,7 @@ console.log("********************");
 
 /*
         let objeto = {
-            nombre :"jon",
+            nombre1 :"jon",
             edad: 35
         }
 
